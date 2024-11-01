@@ -1,0 +1,133 @@
+Node.JS:-
+------------
+
+-runtime environment for JS
+
+-Global Components
+    console,fetch(),setTimeOut(),setInterval(),Date,Number,String,typeOf,parseInt(),parseFloat()
+-Modules
+    import - require('path')
+    expor - module.exports , export.content
+->Pre-defined modules/packages
+-fs - FileSystem 
+-http - to resolve http request
+-url - to handle urls
+-nodemailer -> npm i nodemailer
+
+
+package.json : configuration file of node-modules
+->package-lock.json : file consist of details/informations abt packages in node_modules
+->node_modules: a local package that can keep copies of node.js packages for project development
+
+-eventEmitter - for custom events
+-process : built in object which can provide informations,propertiws about a currently running node.js process
+-environmental variables:
+an environment variable is a user-definable value that can affect the way running process will behave on a computer
+ .env,dotenv -> process.env.DATABASE
+
+ ->FrameWork - a library that bound with rules
+    -express.js
+->Express.js
+    -express.js or simply express , is a back end web application framework for building RESTful API's with NODE.js
+    released as a free and open source software under  the MIT License
+
+->REST api->Representational State Transfer
+[easy development of server,fast responding,data shared in json format,using HTTP protocol as default]
+
+-CORS - Cross-Origin Resource Sharing
+
+-Software development architecture/patterns:
+1.MVC
+2.MVT
+
+// const products=[
+//     {id:1,name:"Iphone 13",price:"56000"},
+//     {id:2,name:"Iphone 14",price:"59000"},
+//     {id:3,name:"Iphone 15",price:"66000"},
+// ]
+
+// exports.productSet=(req,res)=>{
+//     res.status(200).json(products)
+// }
+
+// exports.getProduct=(req,res)=>{
+//     const {pid}=req.params
+//     console.log(pid);
+//     const product=products.find(item=>item.id==pid)
+//     res.status(200).json(product)
+// }
+
+->nodemon :
+-npm i -g nodemon
+-for automatic re rendering of server
+-nodemon is a automatic command-line tool that helps with the speedy development of node.js application.
+-It monitors your peojext directory and automatically restarts your node application when it defects any changes
+
+
+-DAtabase:symmetrical storaage of data
+-database management Systems/DBMS : Software component for manipulating and accessing data from db
+    example:MySQL,MSSQL,SQlite,POSTgre,Firebase,Oracle,MongoDB etc
+
+-SQL & noSQL,Relation & Non-relational Db's
+
+MongoDb Features
+
+Document Model. MongoDB has been designed with developer productivity and flexibility in mind. ...
+-scemaless
+-Document oriented
+-scalable
+
+MySQL                   MongoDB
+
+1.Database               Database
+2.Table                  Collection
+3.Columns/attributes       Fields
+/fields
+4.Row/tuple               Document
+5.Primary Key              Id
+
+operators:
+
+$eq
+$gt
+$gte
+$lt
+$lte
+$in
+$nin
+
+$or
+$and
+$not
+
+$exists
+
+->mongose
+it act as a bridge between express server and MongoDB server
+-object models are collection shema/structure that we setup in server side for creationg uniform structured database
+-models directly used for interacting with collection in the connected mongodb database
+
+-npm i mongose
+-REST and SOAP api differences
+
+->JWT(JSONWEBTOKEN)
+-a more compact authentiaction approach by using a specific classified valued called token
+-an authorised user will be provided with a signature value called 'token,which can be used for permissions 
+in the further requests
+-json web token for node.js
+-npm i jsonwebtoken
+-uses sign() method for creating token for a valid user,and verify() for checking a token/signature validity
+
+=>Middleweare:
+--------------
+-special functions that can act b/w srver and client mainly
+
+const middleware=(req,res,next)=>{
+
+}
+Application-level middleware
+Router-level middleware
+
+-Multer:
+---------
+
